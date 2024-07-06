@@ -1,0 +1,104 @@
+PODS:
+  - Alamofire (5.8.1)
+  - FDFullscreenPopGesture (1.1)
+  - FLAnimatedImage (1.0.17)
+  - FSPagerView (0.8.3)
+  - HandyJSON (5.0.2)
+  - HappyDNS (1.0.3)
+  - IQKeyboardManagerSwift (6.5.16)
+  - Kingfisher (6.3.1)
+  - lottie-ios (4.4.1)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.6)
+  - Qiniu (8.7.1):
+    - HappyDNS (~> 1.0.3)
+  - RxCocoa (6.6.0):
+    - RxRelay (= 6.6.0)
+    - RxSwift (= 6.6.0)
+  - RxRelay (6.6.0):
+    - RxSwift (= 6.6.0)
+  - RxSwift (6.6.0)
+  - SDWebImage (5.18.11):
+    - SDWebImage/Core (= 5.18.11)
+  - SDWebImage/Core (5.18.11)
+  - SnapKit (5.6.0)
+  - TXIMSDK_Plus_iOS (7.8.5505)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+  - YYText (1.0.7)
+  - ZLPhotoBrowser (4.4.9):
+    - ZLPhotoBrowser/Core (= 4.4.9)
+  - ZLPhotoBrowser/Core (4.4.9)
+
+DEPENDENCIES:
+  - Alamofire
+  - FDFullscreenPopGesture
+  - FLAnimatedImage
+  - FSPagerView
+  - HandyJSON
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - lottie-ios
+  - MBProgressHUD
+  - MJRefresh
+  - Qiniu
+  - RxCocoa
+  - RxSwift
+  - SDWebImage
+  - SnapKit
+  - TXIMSDK_Plus_iOS
+  - YYCategories (~> 1.0.4)
+  - YYText
+  - ZLPhotoBrowser
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FDFullscreenPopGesture
+    - FLAnimatedImage
+    - FSPagerView
+    - HandyJSON
+    - HappyDNS
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - lottie-ios
+    - MBProgressHUD
+    - MJRefresh
+    - Qiniu
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SnapKit
+    - TXIMSDK_Plus_iOS
+    - YYCategories
+    - YYText
+    - ZLPhotoBrowser
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  FLAnimatedImage: bbf914596368867157cc71b38a8ec834b3eeb32b
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  HappyDNS: 5421fc84775a299517e994afadb9e732b265ec65
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  lottie-ios: e047b1d2e6239b787cc5e9755b988869cf190494
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 2fe7fb43a5167ceda20bb7e63f130c04fd1814a5
+  Qiniu: 088b904e53819277376d64cd90cfd139d532e386
+  RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
+  RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
+  RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  SDWebImage: a3ba0b8faac7228c3c8eadd1a55c9c9fe5e16457
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  TXIMSDK_Plus_iOS: 753908b8ad2fd7dfac36fe0e9d12485493fbb6a7
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  ZLPhotoBrowser: dadf1f223f9e43284158a11b315befcbd8320400
+
+PODFILE CHECKSUM: 8acb2739594cab43f394ec36b638a49ccc9e95a6
+
+COCOAPODS: 1.12.1
