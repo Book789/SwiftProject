@@ -81,14 +81,6 @@ func getFileSize(_ url:URL) -> Double {
 
 let kPKBgAudo = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first?.appending("/pkBgAudo")
 
-let kHomePKEnter = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first?.appending("/kHomePKEnter")
-
-let kHomePKRules = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first?.appending("/kHomePKRules")
-
-let kPKDayRanking = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first?.appending("/kPKDayRanking")
-
-let kDemoVideoPlay = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first?.appending("/kDemoVideoPlay")
-
 
 // MARK: - 常用宽高
 
@@ -105,32 +97,6 @@ let kStatusBarHeight = xp_statusBarHeight
 /// Tab栏高度
 let kTabBarHeight = 49.0
 
-let kSafeAreaBottomHeight = safeDistanceBottom;
+let kSafeAreaBottomHeight = safeDistanceBottom
 ///消息已读
 let kNotificationReadMessage = "notificationReadMessage";
-///积分中心跳转训练计划
-let kNotificationPushTrainPlan = "notificationTrainPlanPush";
-///积分中心跳转更多课程
-let kNotificationPushMoreSpecialCourse = "notificationToMoreSpecialCourse";
-///搜索运动小课堂返回
-let kNotificationDismissSearch = "notificationDismissSearch";
-///不喜欢视频返回列表刷新
-let kNotificationReloadDislikeClass = "notificationReloadDislikeClass";
-///取消收藏返回列表刷新
-let kNotificationReloadFavoriteClass = "notificationReloadFavoriteClass";
-
-let kNotificationReloadCancelDislikeClass = "notificationReloadCancelDislikeClass";
-//我的收藏取消后列表刷新
-let kNotificationReloadCancelMineFavorite = "notificationReloadCancelMineFavorite"
-
-let kNotificationReloadShareTrainResult = "notificationReloadShareTrainResult"
-//刷新首页VIP状态UI
-let kNotificationReloadHomeUserInfoVIP = "notificationReloadHomeUserInfoVIP"
-//体脂秤连接丢失后重连
-//let kNotificationReConnectBLE = "notificationReConnectBLE"
-//体脂秤更新连接的设备状态
-let kNotificationBLEUpdatePeripheral = "notificationBLEUpdatePeripheral"
-////体脂秤-App接收数据
-//let kNotificationBLERecieveData = "notificationBLERecieveData"
-////体脂秤-获取蓝牙设备
-//let kNotificationBLEGetDevices = "notificationBLEGetDevices"
