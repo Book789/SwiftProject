@@ -23,6 +23,11 @@ class S_EmptyView: UIView {
     
     var retryBlock:RetryComplete?
     
+    lazy var noResultView = {
+        let resultView = UIView.init(frame: CGRectMake(0, 0, self.width, 100))
+        return
+    }()
+    
     var placeholderImageView:UIImageView!
     
     var placeholderLabel:UILabel!
@@ -31,7 +36,7 @@ class S_EmptyView: UIView {
 
     var loadingImageView:UIImageView!
 
-    var _state:SEmptyViewState!
+//    var _state:SEmptyViewState!
     
     var state:SEmptyViewState?{
 
@@ -156,6 +161,9 @@ class S_EmptyView: UIView {
         self.state = .SEmptyViewStateHidden
 
     }
+    
+ 
+    
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.superview!.endEditing(true)

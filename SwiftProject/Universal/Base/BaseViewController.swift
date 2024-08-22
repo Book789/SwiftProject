@@ -16,9 +16,10 @@ class BaseViewController: UIViewController {
 
     var isHiddenHomeIndicator = false
 
+    lazy var emptyView:S_EmptyView = {
+        return  S_EmptyView.addToView(view: self.view, show: false)
+    }()
 
-    var emptyView:S_EmptyView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -36,7 +37,6 @@ class BaseViewController: UIViewController {
         self.view.backgroundColor = MainBackgroundColor
         
         
-        self.emptyView = S_EmptyView.addToView(view: self.view, show: false)
 
     }
     func setScreenOrientation(isLandscape:Bool) {
