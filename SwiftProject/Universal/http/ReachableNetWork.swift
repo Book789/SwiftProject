@@ -15,20 +15,20 @@ class ReachableNetWork: NSObject {
     
     var reachabilityManager = NetworkReachabilityManager.default
 
-     init() {
-        // 监听网络状态变化
-        reachabilityManager?.startListening { status in
-            switch status {
-            case .notReachable: break
-                print("无网络")
-            case .reachable(let type):
-                print("有网络")
-            case .unknown:break
-                print("未知网络")
-            }
-        }
-        reachabilityManager?.stopListening()
-    }
+//     init() {
+//        // 监听网络状态变化
+//        reachabilityManager?.startListening { status in
+//            switch status {
+//            case .notReachable: break
+//                print("无网络")
+//            case .reachable(let type):
+//                print("有网络")
+//            case .unknown:break
+//                print("未知网络")
+//            }
+//        }
+//        reachabilityManager?.stopListening()
+//    }
 
     /// 获取网络类型
    class func getNetworkType() -> String {
