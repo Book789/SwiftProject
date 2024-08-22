@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		617D8F672C76D8FC000E5BED /* CALayer+animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D8F662C76D8FC000E5BED /* CALayer+animation.swift */; };
+		619BB02C2C4284AA00551BE4 /* MPVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619BB02B2C4284AA00551BE4 /* MPVolumeView.swift */; };
 		61AEAD262B9D8CED00498A83 /* HttpManager+Respone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEAD202B9D8CED00498A83 /* HttpManager+Respone.swift */; };
 		61AEAD272B9D8CED00498A83 /* HttpManager+UploadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEAD212B9D8CED00498A83 /* HttpManager+UploadImage.swift */; };
 		61AEAD282B9D8CED00498A83 /* HttpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEAD222B9D8CED00498A83 /* HttpAPI.swift */; };
@@ -82,6 +84,8 @@
 
 /* Begin PBXFileReference section */
 		3EA6B3A28E263CB20C8C8E7C /* Pods_SwiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		617D8F662C76D8FC000E5BED /* CALayer+animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+animation.swift"; sourceTree = "<group>"; };
+		619BB02B2C4284AA00551BE4 /* MPVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPVolumeView.swift; sourceTree = "<group>"; };
 		61AEAD202B9D8CED00498A83 /* HttpManager+Respone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HttpManager+Respone.swift"; sourceTree = "<group>"; };
 		61AEAD212B9D8CED00498A83 /* HttpManager+UploadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HttpManager+UploadImage.swift"; sourceTree = "<group>"; };
 		61AEAD222B9D8CED00498A83 /* HttpAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpAPI.swift; sourceTree = "<group>"; };
@@ -316,6 +320,7 @@
 			children = (
 				61BC78D82B9C725B003D5576 /* UIButton+button.swift */,
 				61BC78D92B9C725B003D5576 /* CALayer+layer.swift */,
+				617D8F662C76D8FC000E5BED /* CALayer+animation.swift */,
 				61BC78DA2B9C725B003D5576 /* UIImage+QRCode.swift */,
 				61BC78DB2B9C725B003D5576 /* UITextView+textView.swift */,
 				61BC78DC2B9C725B003D5576 /* UIFont+Font.swift */,
@@ -328,6 +333,7 @@
 				61BC78E42B9C725B003D5576 /* String+Keychain.swift */,
 				61BC78F72B9C7F86003D5576 /* UIViewController+currentViewController.swift */,
 				61AEAD2E2BA1B25100498A83 /* Data+json.swift */,
+				619BB02B2C4284AA00551BE4 /* MPVolumeView.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -525,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61BC78EC2B9C725B003D5576 /* String+range.swift in Sources */,
+				617D8F672C76D8FC000E5BED /* CALayer+animation.swift in Sources */,
 				61BC78BC2B9C500E003D5576 /* S_ProjectConfig.swift in Sources */,
 				61BC78BB2B9C500E003D5576 /* ColorStant.swift in Sources */,
 				61AEAD2F2BA1B25100498A83 /* Data+json.swift in Sources */,
@@ -537,6 +544,7 @@
 				61AEAD272B9D8CED00498A83 /* HttpManager+UploadImage.swift in Sources */,
 				61BC78B02B9C4EB7003D5576 /* BaseNavigationController.swift in Sources */,
 				61BC78D02B9C721B003D5576 /* CustomTextField.swift in Sources */,
+				619BB02C2C4284AA00551BE4 /* MPVolumeView.swift in Sources */,
 				61AEAD262B9D8CED00498A83 /* HttpManager+Respone.swift in Sources */,
 				61BC78AF2B9C4EB7003D5576 /* S_LoginBaseViewController.swift in Sources */,
 				61AEAD282B9D8CED00498A83 /* HttpAPI.swift in Sources */,
