@@ -21,25 +21,37 @@ extension HttpManager {
         _ progress:@escaping QNUpProgressHandler,
         completedCallBack:@escaping ResultComplete){
             
+            
+            // 记录断点续传文件
+            let fileManager = FileManager.default
+            let urlString = fileManager.urls(for: .documentDirectory, in: .userDomainMask)
+            let documentDirectory:NSURL = urlString.first! as NSURL
+            let fileurl:NSURL = documentDirectory.appendingPathComponent("upprogress")! as NSURL
+
+            
+            
             let uploadOption = QNUploadOption.init { key, percent in
                 // percent 为上传进度
                 progress(key,percent)
             }
             
-            let fileManager = FileManager.default
-            let urlString = fileManager.urls(for: .documentDirectory, in: .userDomainMask)
-            let documentDirectory:NSURL = urlString.first! as NSURL
-            
-            let fileurl:NSURL = documentDirectory.appendingPathComponent("upprogress")! as NSURL
+            // 分片 断点续传
+            let config = QNConfiguration.build{ builder in
+                builder?.chunkSize = 1024 * 1024  //1M
+                builder?.recorder = fileurl as?  QNRecorderDelegate
+            }
+            let upManager = QNUploadManager.init(configuration: config)
 
-            let upManager = QNUploadManager.init(recorder: fileurl as? QNRecorderDelegate)
             
-            let date = Date()
-            let time = (date.timeIntervalSince1970)
+            
+
+            
+//            let date = Date()
+//            let time = (date.timeIntervalSince1970)
           
-            let  formatter = DateFormatter()
-            formatter.dateFormat = "yyyyMMdd"
-            let dates = formatter.string(from: date)
+//            let  formatter = DateFormatter()
+//            formatter.dateFormat = "yyyyMMdd"
+//            let dates = formatter.string(from: date)
             let key = ""
 //            let key = String(format:"video/%@/%0.f",dates,time*100000) + (S_UserInfoLocal.sharedInstance.userInfoModel?.uid.description ?? "") + ".mp4"
             
@@ -53,7 +65,7 @@ extension HttpManager {
                 }else{
                     //失败
                     let error = NSError(domain: NSCocoaErrorDomain, code: 501,userInfo: [NSLocalizedDescriptionKey:resp?["message"] as? String ?? "上传失败"])
-                    completedCallBack(nil,json)
+                    completedCallBack(nil,error)
                 }
                 
             }, option: uploadOption)
