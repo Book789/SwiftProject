@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61767E3D2D19036E00C335E5 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61767E3C2D19036E00C335E5 /* MyViewController.swift */; };
 		617D8F672C76D8FC000E5BED /* CALayer+animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D8F662C76D8FC000E5BED /* CALayer+animation.swift */; };
+		618BA2412D1104FC005BDE44 /* HttpManager+download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618BA2402D1104F2005BDE44 /* HttpManager+download.swift */; };
 		619BB02C2C4284AA00551BE4 /* MPVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619BB02B2C4284AA00551BE4 /* MPVolumeView.swift */; };
 		61AEAD262B9D8CED00498A83 /* HttpManager+Respone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEAD202B9D8CED00498A83 /* HttpManager+Respone.swift */; };
 		61AEAD272B9D8CED00498A83 /* HttpManager+UploadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEAD212B9D8CED00498A83 /* HttpManager+UploadImage.swift */; };
@@ -84,7 +86,9 @@
 
 /* Begin PBXFileReference section */
 		3EA6B3A28E263CB20C8C8E7C /* Pods_SwiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61767E3C2D19036E00C335E5 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		617D8F662C76D8FC000E5BED /* CALayer+animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+animation.swift"; sourceTree = "<group>"; };
+		618BA2402D1104F2005BDE44 /* HttpManager+download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpManager+download.swift"; sourceTree = "<group>"; };
 		619BB02B2C4284AA00551BE4 /* MPVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPVolumeView.swift; sourceTree = "<group>"; };
 		61AEAD202B9D8CED00498A83 /* HttpManager+Respone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HttpManager+Respone.swift"; sourceTree = "<group>"; };
 		61AEAD212B9D8CED00498A83 /* HttpManager+UploadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HttpManager+UploadImage.swift"; sourceTree = "<group>"; };
@@ -174,6 +178,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61767E3A2D19034E00C335E5 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				61767E3B2D19035500C335E5 /* My */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		61767E3B2D19035500C335E5 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				61767E3C2D19036E00C335E5 /* MyViewController.swift */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
 		61AEAD1F2B9D8CED00498A83 /* http */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +203,7 @@
 				61AEAD232B9D8CED00498A83 /* ReachableNetWork.swift */,
 				61AEAD242B9D8CED00498A83 /* HttpManager+UploadVideo.swift */,
 				61AEAD252B9D8CED00498A83 /* HttpManager.swift */,
+				618BA2402D1104F2005BDE44 /* HttpManager+download.swift */,
 				61AEAD2C2BA18D3B00498A83 /* HttpNetworkError.swift */,
 			);
 			path = http;
@@ -213,8 +234,8 @@
 		61BC78732B9C4E21003D5576 /* SwiftProject */ = {
 			isa = PBXGroup;
 			children = (
+				61767E3A2D19034E00C335E5 /* Features */,
 				61BC78A52B9C4E55003D5576 /* Universal */,
-				61BC78A42B9C4E3E003D5576 /* Features */,
 				61BC78742B9C4E21003D5576 /* AppDelegate.swift */,
 				61BC78762B9C4E21003D5576 /* SceneDelegate.swift */,
 				61BC78782B9C4E21003D5576 /* ViewController.swift */,
@@ -243,13 +264,6 @@
 				61BC78972B9C4E23003D5576 /* SwiftProjectUITestsLaunchTests.swift */,
 			);
 			path = SwiftProjectUITests;
-			sourceTree = "<group>";
-		};
-		61BC78A42B9C4E3E003D5576 /* Features */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Features;
 			sourceTree = "<group>";
 		};
 		61BC78A52B9C4E55003D5576 /* Universal */ = {
@@ -537,6 +551,7 @@
 				61AEAD2F2BA1B25100498A83 /* Data+json.swift in Sources */,
 				61BC78B32B9C4FEA003D5576 /* App.swift in Sources */,
 				61BC78E82B9C725B003D5576 /* UIImage+QRCode.swift in Sources */,
+				61767E3D2D19036E00C335E5 /* MyViewController.swift in Sources */,
 				61AEAD2D2BA18D3B00498A83 /* HttpNetworkError.swift in Sources */,
 				61BC78D52B9C721B003D5576 /* S_CodeInputView.swift in Sources */,
 				61AEAD292B9D8CED00498A83 /* ReachableNetWork.swift in Sources */,
@@ -557,6 +572,7 @@
 				61BC78EE2B9C725B003D5576 /* UIView+view.swift in Sources */,
 				61BC78CD2B9C721B003D5576 /* PrivacyAgreementView.swift in Sources */,
 				61BC78CB2B9C721B003D5576 /* S_UIButton.swift in Sources */,
+				618BA2412D1104FC005BDE44 /* HttpManager+download.swift in Sources */,
 				61BC78AE2B9C4EB7003D5576 /* BaseWebViewController.swift in Sources */,
 				61BC78D22B9C721B003D5576 /* CustomTitleImageView.swift in Sources */,
 				61BC78E72B9C725B003D5576 /* CALayer+layer.swift in Sources */,

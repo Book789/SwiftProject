@@ -12,6 +12,10 @@ import Alamofire
 
 public typealias ResultComplete = (Any?,Error?)->Void
  
+public typealias ProgressHandler = (CGFloat?)->Void
+
+
+
 class HttpManager: NSObject {
     
     class var sharedInstance : HttpManager {

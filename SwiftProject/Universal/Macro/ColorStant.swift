@@ -21,3 +21,5 @@ let SubTextColor = kColorWithHex(0x999999)
 let BlueTextColor = kColorWithHex(0x2F63F8)
 
 
+let kAssets = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first!.appending("/Assets")
+

@@ -1,8 +1,5 @@
 //
-//  HttpManager+UploadVideo.swift
-//  Start
 //
-//  Created by cloud on 2023/5/25.
 //
 
 import Foundation

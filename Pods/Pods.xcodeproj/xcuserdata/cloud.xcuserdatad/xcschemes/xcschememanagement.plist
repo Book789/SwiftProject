@@ -89,12 +89,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SSZipArchive.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SnapKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>TXIMSDK_Plus_iOS.xcscheme</key>
+		<key>Toast-Swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

@@ -43,8 +43,8 @@ extension HttpNetworkError : CustomNSError {
         case .responseDataNilFailed: return "Data could not be serialized. Input data was nil."
         case .resultValueNilFailed : return "result.value was nil"
         case .jsonEncodFailed : return "Json data encodeing error"
-        case .entityEncodFailed : return ""
-        case .jsonValueNoDataKeyFailed : return ""
+        case .entityEncodFailed : return "entity Encod Failed"
+        case .jsonValueNoDataKeyFailed : return "json Value No Data Key Failed"
         case .jsonValueNoCodeKeyFailed : return "`code` Field does not exist"
         case .customFailed( _ , let message) : return message
         }

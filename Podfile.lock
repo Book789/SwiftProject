@@ -22,7 +22,8 @@ PODS:
     - SDWebImage/Core (= 5.18.11)
   - SDWebImage/Core (5.18.11)
   - SnapKit (5.6.0)
-  - TXIMSDK_Plus_iOS (7.8.5505)
+  - SSZipArchive (2.4.3)
+  - Toast-Swift (5.0.1)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
   - YYCategories/no-arc (1.0.4)
@@ -47,7 +48,8 @@ DEPENDENCIES:
   - RxSwift
   - SDWebImage
   - SnapKit
-  - TXIMSDK_Plus_iOS
+  - SSZipArchive
+  - Toast-Swift
   - YYCategories (~> 1.0.4)
   - YYText
   - ZLPhotoBrowser
@@ -71,7 +73,8 @@ SPEC REPOS:
     - RxSwift
     - SDWebImage
     - SnapKit
-    - TXIMSDK_Plus_iOS
+    - SSZipArchive
+    - Toast-Swift
     - YYCategories
     - YYText
     - ZLPhotoBrowser
@@ -94,11 +97,12 @@ SPEC CHECKSUMS:
   RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
   SDWebImage: a3ba0b8faac7228c3c8eadd1a55c9c9fe5e16457
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
-  TXIMSDK_Plus_iOS: 753908b8ad2fd7dfac36fe0e9d12485493fbb6a7
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZLPhotoBrowser: dadf1f223f9e43284158a11b315befcbd8320400
 
-PODFILE CHECKSUM: 8acb2739594cab43f394ec36b638a49ccc9e95a6
+PODFILE CHECKSUM: d8f1825a9be1dcafdfd30a56ef67ce5d2c3df209
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.15.2

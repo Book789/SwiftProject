@@ -18,7 +18,9 @@ def all_pods
 #  pod 'KTVHTTPCache', '~> 2.0.0'
   pod 'lottie-ios'
   pod 'Toast-Swift'
+  pod 'SSZipArchive'
 
+  
   #Objective-C
   pod 'YYCategories', '~> 1.0.4'
   pod 'MBProgressHUD'
