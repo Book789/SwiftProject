@@ -12,29 +12,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
   
-    var tabbarController: BaseTabBarController?
+    var tabbarController: BaseTabBarController = BaseTabBarController()
    
     var isLandscape: Bool = false
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.backgroundColor = UIColor.clear
+      
+        self.window!.rootViewController = self.tabbarController
+
+        self.window?.makeKeyAndVisible()
+       
+        //启动程序时未登录时 选择 push 跳转登录 退出登录以及挤掉账号时 模态present 跳转到登录
+        if(S_UserInfoLocal.isLogin()){
+           
+
+        }else{
+//            UIViewController.current().navigationController?.pushViewController(S_LoginViewController(), animated: true)
+        }
+
+//        let splashView = S_SplashView.init(frame: self.window!.bounds)
+//        self.window!.addSubview(splashView)
+//
+//        if ((UserDefaults.standard.object(forKey: FirstAgreementKey) == nil)) {
+//            //同意隐私协议
+//            self.window?.insertSubview(self.privacyAgreementView, at: 1)
+////            let appGuideView = S_AppGuideView.init(frame: self.window!.bounds)
+////            self.window?.insertSubview(appGuideView, at: 1)
+//        }
+        
+
         return true
     }
 
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
 
 
 }

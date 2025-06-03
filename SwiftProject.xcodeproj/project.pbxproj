@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		61767E3D2D19036E00C335E5 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61767E3C2D19036E00C335E5 /* MyViewController.swift */; };
+		61767E472D2E23D900C335E5 /* S_UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61767E452D2E23D900C335E5 /* S_UserInfoModel.swift */; };
+		61767E482D2E23D900C335E5 /* S_UserInfoLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61767E442D2E23D900C335E5 /* S_UserInfoLocal.swift */; };
+		61767E4A2D2E241F00C335E5 /* S_LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61767E492D2E241F00C335E5 /* S_LoginViewController.swift */; };
 		617D8F672C76D8FC000E5BED /* CALayer+animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D8F662C76D8FC000E5BED /* CALayer+animation.swift */; };
 		618BA2412D1104FC005BDE44 /* HttpManager+download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618BA2402D1104F2005BDE44 /* HttpManager+download.swift */; };
 		619BB02C2C4284AA00551BE4 /* MPVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619BB02B2C4284AA00551BE4 /* MPVolumeView.swift */; };
@@ -64,6 +67,7 @@
 		61BC78F12B9C725B003D5576 /* String+Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BC78E42B9C725B003D5576 /* String+Keychain.swift */; };
 		61BC78F82B9C7F86003D5576 /* UIViewController+currentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BC78F72B9C7F86003D5576 /* UIViewController+currentViewController.swift */; };
 		61BCE44A2BAEC56700DCA814 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BCE4492BAEC56700DCA814 /* Protocol.swift */; };
+		61FF53DE2DE9B45400894A52 /* S_SetttingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF53DD2DE9B45400894A52 /* S_SetttingViewController.swift */; };
 		DF7B50F346F5FC2DB870F17E /* Pods_SwiftProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA6B3A28E263CB20C8C8E7C /* Pods_SwiftProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +91,9 @@
 /* Begin PBXFileReference section */
 		3EA6B3A28E263CB20C8C8E7C /* Pods_SwiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61767E3C2D19036E00C335E5 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		61767E442D2E23D900C335E5 /* S_UserInfoLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_UserInfoLocal.swift; sourceTree = "<group>"; };
+		61767E452D2E23D900C335E5 /* S_UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_UserInfoModel.swift; sourceTree = "<group>"; };
+		61767E492D2E241F00C335E5 /* S_LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_LoginViewController.swift; sourceTree = "<group>"; };
 		617D8F662C76D8FC000E5BED /* CALayer+animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+animation.swift"; sourceTree = "<group>"; };
 		618BA2402D1104F2005BDE44 /* HttpManager+download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpManager+download.swift"; sourceTree = "<group>"; };
 		619BB02B2C4284AA00551BE4 /* MPVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPVolumeView.swift; sourceTree = "<group>"; };
@@ -148,6 +155,7 @@
 		61BC78F62B9C7A8E003D5576 /* swiftProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swiftProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		61BC78F72B9C7F86003D5576 /* UIViewController+currentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+currentViewController.swift"; sourceTree = "<group>"; };
 		61BCE4492BAEC56700DCA814 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		61FF53DD2DE9B45400894A52 /* S_SetttingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_SetttingViewController.swift; sourceTree = "<group>"; };
 		C672617FEACDB100B081E335 /* Pods-SwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftProject/Pods-SwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
 		EC8B697AEEEBE0BA642A404C /* Pods-SwiftProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject.release.xcconfig"; path = "Target Support Files/Pods-SwiftProject/Pods-SwiftProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,8 +198,19 @@
 			isa = PBXGroup;
 			children = (
 				61767E3C2D19036E00C335E5 /* MyViewController.swift */,
+				61767E492D2E241F00C335E5 /* S_LoginViewController.swift */,
+				61FF53DD2DE9B45400894A52 /* S_SetttingViewController.swift */,
 			);
 			path = My;
+			sourceTree = "<group>";
+		};
+		61767E462D2E23D900C335E5 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				61767E442D2E23D900C335E5 /* S_UserInfoLocal.swift */,
+				61767E452D2E23D900C335E5 /* S_UserInfoModel.swift */,
+			);
+			path = UserInfo;
 			sourceTree = "<group>";
 		};
 		61AEAD1F2B9D8CED00498A83 /* http */ = {
@@ -275,6 +294,7 @@
 				61BC78B42B9C500E003D5576 /* Macro */,
 				61BC78B12B9C4FEA003D5576 /* System */,
 				61BC78A62B9C4EB7003D5576 /* Base */,
+				61767E462D2E23D900C335E5 /* UserInfo */,
 			);
 			path = Universal;
 			sourceTree = "<group>";
@@ -528,9 +548,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -571,9 +595,12 @@
 				61BC78D32B9C721B003D5576 /* CustomButtonView.swift in Sources */,
 				61BC78EE2B9C725B003D5576 /* UIView+view.swift in Sources */,
 				61BC78CD2B9C721B003D5576 /* PrivacyAgreementView.swift in Sources */,
+				61FF53DE2DE9B45400894A52 /* S_SetttingViewController.swift in Sources */,
 				61BC78CB2B9C721B003D5576 /* S_UIButton.swift in Sources */,
 				618BA2412D1104FC005BDE44 /* HttpManager+download.swift in Sources */,
 				61BC78AE2B9C4EB7003D5576 /* BaseWebViewController.swift in Sources */,
+				61767E472D2E23D900C335E5 /* S_UserInfoModel.swift in Sources */,
+				61767E482D2E23D900C335E5 /* S_UserInfoLocal.swift in Sources */,
 				61BC78D22B9C721B003D5576 /* CustomTitleImageView.swift in Sources */,
 				61BC78E72B9C725B003D5576 /* CALayer+layer.swift in Sources */,
 				61BC78E62B9C725B003D5576 /* UIButton+button.swift in Sources */,
@@ -594,6 +621,7 @@
 				61BC78752B9C4E21003D5576 /* AppDelegate.swift in Sources */,
 				61BC78772B9C4E21003D5576 /* SceneDelegate.swift in Sources */,
 				61BCE44A2BAEC56700DCA814 /* Protocol.swift in Sources */,
+				61767E4A2D2E241F00C335E5 /* S_LoginViewController.swift in Sources */,
 				61BC78CE2B9C721B003D5576 /* S_SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -783,8 +811,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -815,8 +842,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
