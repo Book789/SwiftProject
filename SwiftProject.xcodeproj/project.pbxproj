@@ -13,7 +13,12 @@
 		61767E4A2D2E241F00C335E5 /* S_LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61767E492D2E241F00C335E5 /* S_LoginViewController.swift */; };
 		617D8F672C76D8FC000E5BED /* CALayer+animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D8F662C76D8FC000E5BED /* CALayer+animation.swift */; };
 		618BA2412D1104FC005BDE44 /* HttpManager+download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618BA2402D1104F2005BDE44 /* HttpManager+download.swift */; };
+		619210942E03E58B007FAD50 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619210932E03E58B007FAD50 /* BluetoothManager.swift */; };
 		619BB02C2C4284AA00551BE4 /* MPVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619BB02B2C4284AA00551BE4 /* MPVolumeView.swift */; };
+		61AB0EA62E53233F008A78A9 /* String+number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AB0EA52E53233E008A78A9 /* String+number.swift */; };
+		61AB0EA82E53238C008A78A9 /* String+AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AB0EA72E53238C008A78A9 /* String+AttributedString.swift */; };
+		61AB0EAA2E53239C008A78A9 /* String+date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AB0EA92E53239C008A78A9 /* String+date.swift */; };
+		61AB0EAE2E540439008A78A9 /* Date+string.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AB0EAD2E540433008A78A9 /* Date+string.swift */; };
 		61AEAD262B9D8CED00498A83 /* HttpManager+Respone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEAD202B9D8CED00498A83 /* HttpManager+Respone.swift */; };
 		61AEAD272B9D8CED00498A83 /* HttpManager+UploadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEAD212B9D8CED00498A83 /* HttpManager+UploadImage.swift */; };
 		61AEAD282B9D8CED00498A83 /* HttpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEAD222B9D8CED00498A83 /* HttpAPI.swift */; };
@@ -100,7 +105,12 @@
 		61767E492D2E241F00C335E5 /* S_LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_LoginViewController.swift; sourceTree = "<group>"; };
 		617D8F662C76D8FC000E5BED /* CALayer+animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+animation.swift"; sourceTree = "<group>"; };
 		618BA2402D1104F2005BDE44 /* HttpManager+download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpManager+download.swift"; sourceTree = "<group>"; };
+		619210932E03E58B007FAD50 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		619BB02B2C4284AA00551BE4 /* MPVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPVolumeView.swift; sourceTree = "<group>"; };
+		61AB0EA52E53233E008A78A9 /* String+number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+number.swift"; sourceTree = "<group>"; };
+		61AB0EA72E53238C008A78A9 /* String+AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AttributedString.swift"; sourceTree = "<group>"; };
+		61AB0EA92E53239C008A78A9 /* String+date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+date.swift"; sourceTree = "<group>"; };
+		61AB0EAD2E540433008A78A9 /* Date+string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+string.swift"; sourceTree = "<group>"; };
 		61AEAD202B9D8CED00498A83 /* HttpManager+Respone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HttpManager+Respone.swift"; sourceTree = "<group>"; };
 		61AEAD212B9D8CED00498A83 /* HttpManager+UploadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HttpManager+UploadImage.swift"; sourceTree = "<group>"; };
 		61AEAD222B9D8CED00498A83 /* HttpAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpAPI.swift; sourceTree = "<group>"; };
@@ -221,6 +231,14 @@
 			path = UserInfo;
 			sourceTree = "<group>";
 		};
+		619210922E03E505007FAD50 /* bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				619210932E03E58B007FAD50 /* BluetoothManager.swift */,
+			);
+			path = bluetooth;
+			sourceTree = "<group>";
+		};
 		61AEAD1F2B9D8CED00498A83 /* http */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +314,7 @@
 		61BC78A52B9C4E55003D5576 /* Universal */ = {
 			isa = PBXGroup;
 			children = (
+				619210922E03E505007FAD50 /* bluetooth */,
 				61FF53DF2DEE91BA00894A52 /* Log */,
 				61AEAD1F2B9D8CED00498A83 /* http */,
 				61BC78D62B9C725B003D5576 /* Category */,
@@ -361,6 +380,10 @@
 		61BC78D62B9C725B003D5576 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				61AB0EA92E53239C008A78A9 /* String+date.swift */,
+				61AB0EAD2E540433008A78A9 /* Date+string.swift */,
+				61AB0EA72E53238C008A78A9 /* String+AttributedString.swift */,
+				61AB0EA52E53233E008A78A9 /* String+number.swift */,
 				61BC78D82B9C725B003D5576 /* UIButton+button.swift */,
 				61BC78D92B9C725B003D5576 /* CALayer+layer.swift */,
 				617D8F662C76D8FC000E5BED /* CALayer+animation.swift */,
@@ -599,6 +622,7 @@
 				61767E3D2D19036E00C335E5 /* MyViewController.swift in Sources */,
 				61AEAD2D2BA18D3B00498A83 /* HttpNetworkError.swift in Sources */,
 				61BC78D52B9C721B003D5576 /* S_CodeInputView.swift in Sources */,
+				61AB0EA62E53233F008A78A9 /* String+number.swift in Sources */,
 				61AEAD292B9D8CED00498A83 /* ReachableNetWork.swift in Sources */,
 				61AEAD2A2B9D8CED00498A83 /* HttpManager+UploadVideo.swift in Sources */,
 				61AEAD272B9D8CED00498A83 /* HttpManager+UploadImage.swift in Sources */,
@@ -606,6 +630,7 @@
 				61BC78D02B9C721B003D5576 /* CustomTextField.swift in Sources */,
 				619BB02C2C4284AA00551BE4 /* MPVolumeView.swift in Sources */,
 				61AEAD262B9D8CED00498A83 /* HttpManager+Respone.swift in Sources */,
+				61AB0EAA2E53239C008A78A9 /* String+date.swift in Sources */,
 				61BC78AF2B9C4EB7003D5576 /* S_LoginBaseViewController.swift in Sources */,
 				61AEAD282B9D8CED00498A83 /* HttpAPI.swift in Sources */,
 				61BC78F82B9C7F86003D5576 /* UIViewController+currentViewController.swift in Sources */,
@@ -622,6 +647,7 @@
 				618BA2412D1104FC005BDE44 /* HttpManager+download.swift in Sources */,
 				61BC78AE2B9C4EB7003D5576 /* BaseWebViewController.swift in Sources */,
 				61767E472D2E23D900C335E5 /* S_UserInfoModel.swift in Sources */,
+				619210942E03E58B007FAD50 /* BluetoothManager.swift in Sources */,
 				61767E482D2E23D900C335E5 /* S_UserInfoLocal.swift in Sources */,
 				61BC78D22B9C721B003D5576 /* CustomTitleImageView.swift in Sources */,
 				61BC78E72B9C725B003D5576 /* CALayer+layer.swift in Sources */,
@@ -629,10 +655,12 @@
 				61BC78EB2B9C725B003D5576 /* String+Hex.swift in Sources */,
 				61FF54682DEEAA1C00894A52 /* LogLevel.swift in Sources */,
 				61BC78D12B9C721B003D5576 /* S_EmptyView.swift in Sources */,
+				61AB0EAE2E540439008A78A9 /* Date+string.swift in Sources */,
 				61BC78CA2B9C721B003D5576 /* S_AppGuideView.swift in Sources */,
 				61BC78ED2B9C725B003D5576 /* UIView+Frame.swift in Sources */,
 				61FF54642DEEA64A00894A52 /* LogEntry.swift in Sources */,
 				61BC78CC2B9C721B003D5576 /* S_RefreshGifFooter.swift in Sources */,
+				61AB0EA82E53238C008A78A9 /* String+AttributedString.swift in Sources */,
 				61BC78EA2B9C725B003D5576 /* UIFont+Font.swift in Sources */,
 				61BC78E92B9C725B003D5576 /* UITextView+textView.swift in Sources */,
 				61BC78EF2B9C725B003D5576 /* String+string.swift in Sources */,
@@ -833,6 +861,8 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -865,6 +895,8 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

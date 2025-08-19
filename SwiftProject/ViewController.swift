@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         print("100".hash)
         print("100".hash)
+        print(Date.dateToString(date: Date()))
 
 
         HttpManager.POST(path: "/user/login/pwd") { data, error in
