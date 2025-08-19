@@ -1,8 +1,5 @@
 //
 //  String+Keychain.swift
-//  Start
-//
-//  Created by cloud on 2024/3/6.
 //
 
 import Foundation

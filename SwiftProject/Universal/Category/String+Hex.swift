@@ -1,8 +1,6 @@
 //
 //  String+Hex.swift
-//  Start
 //
-//  Created by 郑珠 on 2024/2/26.
 //
 
 import UIKit

@@ -1,8 +1,5 @@
 //
 //  UIImage+image.swift
-//  Start
-//
-//  Created by Book on 2023/4/20.
 //
 
 import Foundation
@@ -11,8 +8,8 @@ import UIKit
 enum GradientType{
     case GradientFromTopToBottom            //从上到下
     case GradientFromLeftToRight                //从左边到右
-    case GradientFromLeftTopToRightBottom      //从上到下
-    case GradientFromLeftBottomToRightTop        //从上到下
+    case GradientFromLeftTopToRightBottom      //从左上到右下
+    case GradientFromLeftBottomToRightTop        //从左下到右上
 }
 
 
