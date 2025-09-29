@@ -8,15 +8,15 @@
 import Foundation
 import Alamofire
 
-typealias FailureHandler = (_ error: Error) -> Void
+typealias FailureHandler = (_ error: HttpNetworkError) -> Void
 
 extension Alamofire.DataRequest{
     
-    func responseObject(success: ((_ value:AnyObject?) -> Void)?,
+    func responseObject(success: ((_ value:[String:AnyObject]?) -> Void)?,
                                      failure: FailureHandler?){
        respose(DataResponseSerializer(), success: success, failure: failure)
     }
-    private func respose(_ serializer:DataResponseSerializer,success:((_ value:AnyObject) -> Void)?,failure: FailureHandler?){
+    private func respose(_ serializer:DataResponseSerializer,success:((_ value:[String:AnyObject]) -> Void)?,failure: FailureHandler?){
         response(responseSerializer: serializer) { (response) in
             
             let metrics = response.metrics
@@ -54,39 +54,37 @@ extension Alamofire.DataRequest{
             case .success(_):
                 self.vaildResponseData(data: response.data, success: success,failure: failure)
             case .failure(let error):
-                failure?(error as Error)
+                let networkError = NetworkErrorHandler.handle(error)
+                failure?(networkError)
             }
         }
     }
     
-    private func vaildResponseData(data:Data?,success:((_ value:AnyObject) -> Void)?,failure: FailureHandler?){
-        
+    private func vaildResponseData(data:Data?,success:((_ value:[String:AnyObject]) -> Void)?,failure: FailureHandler?){
+
         guard let respondData = data else {
-            let error = HttpNetworkError.responseDataNilFailed
-            failure?(error)
+            failure?(.noDataReceived)
             return
         }
-        guard let json = respondData.dataToJSON() else {
-            let error = HttpNetworkError.jsonEncodFailed
-            failure?(error)
+        if(respondData.isEmpty){
+            failure?(.emptyResponse)
             return
         }
-        if json["code"] as! Int==200{
-            success?(json)
+        do {
+            if let json = try JSONSerialization.jsonObject(with: respondData, options: []) as? [String : AnyObject] {
+                
+                let code = json["code"] as! Int
+                if code == 200{
+                    success?(json)
+                }
+                
+//                let networkError = HttpNetworkError.custom(message: <#T##String#>, code: <#T##Int#>)
+            }else{
+                failure?(.invalidResponseData)
+            }
+        } catch {
+            failure?(.jsonParsingFailed(error))
         }
-        let error = HttpNetworkError.responseDataNilFailed
-        failure?(error)
-        
-        if json["code"] as! Int==403{
-            
-            //
-//            S_UserInfoLocal.exitLogin()
-            failure?(NSError(domain: NSCocoaErrorDomain, code: json["code"]as! Int,userInfo: [NSLocalizedDescriptionKey:""]))
-            return
-        }
-        if json["code"] as! Int==500{
-            failure?(NSError(domain: NSCocoaErrorDomain, code: json["code"]as! Int,userInfo: [NSLocalizedDescriptionKey:json["message"] as? String ?? "服务器异常繁忙，请稍后再试"]))
-            return
-        }
+
     }
 }
