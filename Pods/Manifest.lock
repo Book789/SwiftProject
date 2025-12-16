@@ -9,6 +9,9 @@ PODS:
   - Kingfisher (6.3.1)
   - lottie-ios (4.4.1)
   - MBProgressHUD (1.2.0)
+  - MediaPipeTasksCommon (0.10.21)
+  - MediaPipeTasksVision (0.10.21):
+    - MediaPipeTasksCommon (= 0.10.21)
   - MJRefresh (3.7.6)
   - Qiniu (8.7.1):
     - HappyDNS (~> 1.0.3)
@@ -42,6 +45,7 @@ DEPENDENCIES:
   - Kingfisher
   - lottie-ios
   - MBProgressHUD
+  - MediaPipeTasksVision (~> 0.10.0)
   - MJRefresh
   - Qiniu
   - RxCocoa
@@ -66,6 +70,8 @@ SPEC REPOS:
     - Kingfisher
     - lottie-ios
     - MBProgressHUD
+    - MediaPipeTasksCommon
+    - MediaPipeTasksVision
     - MJRefresh
     - Qiniu
     - RxCocoa
@@ -90,6 +96,8 @@ SPEC CHECKSUMS:
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   lottie-ios: e047b1d2e6239b787cc5e9755b988869cf190494
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MediaPipeTasksCommon: 6cfa29170d4900f04d250ad95ec058f14a741f38
+  MediaPipeTasksVision: 7b1c0f5a5820e87e9d96926f5e65d8cd3744fac2
   MJRefresh: 2fe7fb43a5167ceda20bb7e63f130c04fd1814a5
   Qiniu: 088b904e53819277376d64cd90cfd139d532e386
   RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
@@ -103,6 +111,6 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZLPhotoBrowser: dadf1f223f9e43284158a11b315befcbd8320400
 
-PODFILE CHECKSUM: d8f1825a9be1dcafdfd30a56ef67ce5d2c3df209
+PODFILE CHECKSUM: 840c571d84c7d97b57137b424c40252b3406365d
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2
