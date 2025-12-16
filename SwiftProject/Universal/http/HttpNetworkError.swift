@@ -71,7 +71,7 @@ enum HttpNetworkError: Error, CustomStringConvertible {
             return "请检查网络连接情况"
         case .requestTimeout:
             return "请求超时"
-        case .unauthorized: 
+        case .unauthorized:
             return "Please login again"
         case .rateLimitExceeded:
             return "Wait before retrying"
@@ -98,7 +98,7 @@ extension AFError {
         switch self {
         case .invalidURL: return .invalidURL
         case .sessionTaskFailed(let error as URLError) where error.code == .notConnectedToInternet:
-            return .noInternetConnection
+            return .networkUnavailable
         case .sessionTaskFailed(let error as URLError) where error.code == .timedOut:
             return .requestTimeout
         case .responseValidationFailed(let reason):
@@ -133,7 +133,7 @@ struct NetworkErrorHandler {
         } else if let urlError = error as? URLError {
             switch urlError.code {
             case .notConnectedToInternet, .dataNotAllowed:
-                return .noInternetConnection
+                return .networkUnavailable
             case .timedOut:
                 return .requestTimeout
             default:
