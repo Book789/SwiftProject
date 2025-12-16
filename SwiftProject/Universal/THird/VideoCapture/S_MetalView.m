@@ -6,6 +6,7 @@
 //
 
 #import "S_MetalView.h"
+#import <MetalKit/MetalKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <MetalPerformanceShaders/MetalPerformanceShaders.h>
 #import "KFShaderType.h"
@@ -42,6 +43,7 @@ static const matrix_float3x3 kFColorMatrix709FullRange = (matrix_float3x3) {
 @property (nonatomic, assign) CVPixelBufferRef pixelBuffer; // 外层输入的最后一帧数据。
 @property (nonatomic, strong) dispatch_semaphore_t semaphore; // 处理 PixelBuffer 锁，防止外层输入线程与渲染线程同时操作 Crash。
 @property (nonatomic, assign) CVMetalTextureCacheRef textureCache; // 纹理缓存，根据 pixelbuffer 获取纹理。
+@property (nonatomic, strong) MTKView *mtkView; // Metal 渲染的 view。
 @property (nonatomic, assign) vector_uint2 viewportSize; // 视口大小。
 @property (nonatomic, strong) id<MTLRenderPipelineState> pipelineState; // 渲染管道，管理顶点函数和片元函数。
 @property (nonatomic, strong) id<MTLCommandQueue> commandQueue; // 渲染指令队列。
@@ -68,7 +70,7 @@ static const matrix_float3x3 kFColorMatrix709FullRange = (matrix_float3x3) {
         self.mtkView.backgroundColor = [UIColor clearColor];
         [self addSubview:self.mtkView];
         self.mtkView.delegate = self;
-        self.mtkView.framebufferOnly = false;
+        self.mtkView.framebufferOnly = YES;
         self.viewportSize = (vector_uint2) {self.mtkView.drawableSize.width, self.mtkView.drawableSize.height};
         
         // 创建渲染线程。
