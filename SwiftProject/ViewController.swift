@@ -16,7 +16,6 @@ class ViewController: UIViewController {
         print("100".hash)
         print(Date.dateToString(date: Date()))
 
-
         HttpManager.POST(path: "/user/login/pwd") { data, error in
             print(error?.localizedDescription)
         }
@@ -34,7 +33,12 @@ class ViewController: UIViewController {
         }
 
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+                                
+
+        UIWindow.showLoadingHUD()
+    }
 
 
 }
-
