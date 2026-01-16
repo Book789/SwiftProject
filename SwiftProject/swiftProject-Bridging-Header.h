@@ -5,12 +5,13 @@
 //  Created by cloud on 2024/3/9.
 //
 
-#ifndef swiftProject-Bridging-Header_h
-#define swiftProject-Bridging-Header_h
+#ifndef SwiftProject-Bridging-Header_h
+#define SwiftProject-Bridging-Header_h
 
 #import <MJRefresh.h>
 
 #import <YYText/YYText.h>
 
+#import "S_MetalView.h"
 
 #endif /* Header_h */
