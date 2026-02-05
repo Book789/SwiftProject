@@ -75,7 +75,7 @@ class S_VideoRecorder: NSObject {
             AVVideoWidthKey : self.rect.width,
             AVVideoHeightKey : self.rect.height,
             AVVideoCompressionPropertiesKey : [
-                AVVideoExpectedSourceFrameRateKey: 25,
+                AVVideoExpectedSourceFrameRateKey: 28,
                 AVVideoQualityKey:0.9,
                 AVVideoAverageBitRateKey : 3*kScreenWidth*kScreenHeight,
                 AVVideoProfileLevelKey:kVTProfileLevel_HEVC_Main10_AutoLevel
@@ -153,20 +153,21 @@ class S_VideoRecorder: NSObject {
         }
 
     }
-    func stopRecord(){
+    func stopRecord(completion: (() -> Void)? = nil){
         if(self.videoWriterInput == nil){
+            completion?()
             return
         }
         if self.assetWriter.status == .writing {
             
             self.videoWriterInput.markAsFinished()
             self.assetWriter.finishWriting {
-                
+                completion?()
             }
             
             return
         }
-      
+        completion?()
     }
     private func createPixelBuffer() -> CVPixelBuffer? {
            let width = Int(UIScreen.main.bounds.width)

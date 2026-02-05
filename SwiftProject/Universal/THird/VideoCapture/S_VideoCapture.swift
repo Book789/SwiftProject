@@ -59,7 +59,7 @@ class S_VideoCapture: NSObject {
 
         
         session.beginConfiguration()      //开始设置session的参数
-//        session.sessionPreset = .high  // 设置输入数据的像素.
+        session.sessionPreset = .high  // 设置输入数据的像素.
         
         //首先判断是否能添加输入数据流，如果不能就结束函数
         guard session.canAddInput(videoInput) else {

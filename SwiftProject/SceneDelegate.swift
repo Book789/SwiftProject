@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFAudio
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -21,6 +22,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = BaseNavigationController(rootViewController: MyViewController())
         window?.makeKeyAndVisible()
+
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(.playAndRecord,mode: .videoRecording, options: [.defaultToSpeaker,.allowBluetoothHFP])
+            try audioSession.setActive(true)
+        } catch {
+
+        }
 
     }
 

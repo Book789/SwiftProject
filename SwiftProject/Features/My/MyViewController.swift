@@ -82,9 +82,13 @@ class MyViewController: BaseViewController {
 //        let documentDirectory:NSURL = urlString.first! as NSURL
 //
 //        let outputURL:URL = documentDirectory.appendingPathComponent("ScreenRecord.mp4")! as URL
-//
+////
+//        // 在这里放置需要在主线程上执行的代码
+//        let activityViewController = UIActivityViewController(activityItems: [outputURL], applicationActivities: nil)
+//        activityViewController.popoverPresentationController?.sourceView = self.view // 对于iPad很重要，确保popover出现在正确的位置
+//        self.present(activityViewController, animated: true, completion: nil)
 
-//        self.perform(#selector(stop), with: nil, afterDelay: 30)
+        self.perform(#selector(stop), with: nil, afterDelay: 30)
 
     }
     @objc func stop() {
