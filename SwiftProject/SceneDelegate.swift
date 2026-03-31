@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = BaseNavigationController(rootViewController: MyViewController())
+        window?.rootViewController = BaseNavigationController(rootViewController: VideoPlayerViewController())
         window?.makeKeyAndVisible()
 
         let audioSession = AVAudioSession.sharedInstance()
