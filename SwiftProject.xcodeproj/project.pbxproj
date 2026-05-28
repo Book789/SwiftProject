@@ -12,6 +12,7 @@
 		610B09572F6E353700183288 /* VideoCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B09562F6E353300183288 /* VideoCacheManager.swift */; };
 		610B09592F6E355300183288 /* VideoPlayHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B09582F6E355000183288 /* VideoPlayHistoryManager.swift */; };
 		610B095B2F6E356800183288 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B095A2F6E356400183288 /* VideoPlayerViewController.swift */; };
+		61104F192FB1DE2100FD56DD /* DelegatePool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61104F182FB1DE1800FD56DD /* DelegatePool.swift */; };
 		61767E3D2D19036E00C335E5 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61767E3C2D19036E00C335E5 /* MyViewController.swift */; };
 		61767E472D2E23D900C335E5 /* S_UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61767E452D2E23D900C335E5 /* S_UserInfoModel.swift */; };
 		61767E482D2E23D900C335E5 /* S_UserInfoLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61767E442D2E23D900C335E5 /* S_UserInfoLocal.swift */; };
@@ -98,6 +99,7 @@
 		61D3CEBB2EC48BF900AB5129 /* S_VideoRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D3CEB72EC48BF900AB5129 /* S_VideoRecorder.swift */; };
 		61D3CF222EC57EDF00AB5129 /* MediaPipePoseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D3CF212EC57ED700AB5129 /* MediaPipePoseDetector.swift */; };
 		61FBAEBB2F7B97BC003F4281 /* UIButton+Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FBAEBA2F7B97B6003F4281 /* UIButton+Debounce.swift */; };
+		61FBBA3A2F839EE1003F4281 /* BodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FBBA392F839ED4003F4281 /* BodyViewController.swift */; };
 		61FF53DE2DE9B45400894A52 /* S_SetttingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF53DD2DE9B45400894A52 /* S_SetttingViewController.swift */; };
 		61FF53E12DEE91D000894A52 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF53E02DEE91D000894A52 /* LogManager.swift */; };
 		61FF54642DEEA64A00894A52 /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF54632DEEA64A00894A52 /* LogEntry.swift */; };
@@ -130,6 +132,7 @@
 		610B09562F6E353300183288 /* VideoCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCacheManager.swift; sourceTree = "<group>"; };
 		610B09582F6E355000183288 /* VideoPlayHistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayHistoryManager.swift; sourceTree = "<group>"; };
 		610B095A2F6E356400183288 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		61104F182FB1DE1800FD56DD /* DelegatePool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePool.swift; sourceTree = "<group>"; };
 		61767E3C2D19036E00C335E5 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		61767E442D2E23D900C335E5 /* S_UserInfoLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_UserInfoLocal.swift; sourceTree = "<group>"; };
 		61767E452D2E23D900C335E5 /* S_UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_UserInfoModel.swift; sourceTree = "<group>"; };
@@ -223,6 +226,7 @@
 		61D3CEB72EC48BF900AB5129 /* S_VideoRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_VideoRecorder.swift; sourceTree = "<group>"; };
 		61D3CF212EC57ED700AB5129 /* MediaPipePoseDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPipePoseDetector.swift; sourceTree = "<group>"; };
 		61FBAEBA2F7B97B6003F4281 /* UIButton+Debounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Debounce.swift"; sourceTree = "<group>"; };
+		61FBBA392F839ED4003F4281 /* BodyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyViewController.swift; sourceTree = "<group>"; };
 		61FF53DD2DE9B45400894A52 /* S_SetttingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_SetttingViewController.swift; sourceTree = "<group>"; };
 		61FF53E02DEE91D000894A52 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 		61FF54632DEEA64A00894A52 /* LogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntry.swift; sourceTree = "<group>"; };
@@ -276,6 +280,7 @@
 		61767E3B2D19035500C335E5 /* My */ = {
 			isa = PBXGroup;
 			children = (
+				61FBBA392F839ED4003F4281 /* BodyViewController.swift */,
 				61767E3C2D19036E00C335E5 /* MyViewController.swift */,
 				61767E492D2E241F00C335E5 /* S_LoginViewController.swift */,
 				61FF53DD2DE9B45400894A52 /* S_SetttingViewController.swift */,
@@ -490,6 +495,7 @@
 		61D3CEB42EC48BE600AB5129 /* THird */ = {
 			isa = PBXGroup;
 			children = (
+				61104F182FB1DE1800FD56DD /* DelegatePool.swift */,
 				61AAE3FA2F0A076C00941E73 /* FileManager */,
 				61D3D39D2ECC05E200AB5129 /* VideoCapture */,
 				61D3CF232EC57F5900AB5129 /* Pose */,
@@ -750,6 +756,7 @@
 				61BC78D52B9C721B003D5576 /* S_CodeInputView.swift in Sources */,
 				61ADB12D2EDAE187003882A3 /* DetectionBall.mlpackage in Sources */,
 				61ADDD4A2EF0F2C6003882A3 /* ObjectDetect.mlmodel in Sources */,
+				61FBBA3A2F839EE1003F4281 /* BodyViewController.swift in Sources */,
 				61ADA4672ED68E6B003882A3 /* MediaPipePoseDrawingView.swift in Sources */,
 				61AB0EA62E53233F008A78A9 /* String+number.swift in Sources */,
 				61AEAD292B9D8CED00498A83 /* ReachableNetWork.swift in Sources */,
@@ -758,6 +765,7 @@
 				61BC78B02B9C4EB7003D5576 /* BaseNavigationController.swift in Sources */,
 				61BC78D02B9C721B003D5576 /* CustomTextField.swift in Sources */,
 				619BB02C2C4284AA00551BE4 /* MPVolumeView.swift in Sources */,
+				61104F192FB1DE2100FD56DD /* DelegatePool.swift in Sources */,
 				61ADDD482EF0F005003882A3 /* YOLOv3Tiny.mlpackage in Sources */,
 				61AEAD262B9D8CED00498A83 /* HttpManager+Respone.swift in Sources */,
 				61AB0EAA2E53239C008A78A9 /* String+date.swift in Sources */,
@@ -1012,7 +1020,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1052,7 +1060,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

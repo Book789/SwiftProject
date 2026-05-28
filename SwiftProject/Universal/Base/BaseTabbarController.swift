@@ -66,7 +66,7 @@ class BaseTabBarController: UITabBarController,UITabBarControllerDelegate{
         
 //        self.setupChildVC(vc: SportsViewController(), title: "运动", norImage: "icon_tabbar_sport_normal", selectImage: "icon_tabbar_sport_sel")
 //        self.setupChildVC(vc: HealthTestViewController(), title: "体测", norImage: "icon_tabbar_healthTest_normal", selectImage: "icon_tabbar_healthTest_sel")
-        self.setupChildVC(vc: MyViewController(), title: "我的", norImage: "icon_tabbar_my_normal", selectImage: "icon_tabbar_my_sel")
+        self.setupChildVC(vc: BodyViewController(), title: "我的", norImage: "icon_tabbar_my_normal", selectImage: "icon_tabbar_my_sel")
 
     }
     
